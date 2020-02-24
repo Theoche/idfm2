@@ -1,13 +1,10 @@
 
 
-location /wp-content/uploads/2013/11/STIF_-_Mise_en_service_du_T7.pdf {
-        proxy_pass https://test-idfm.s3.eu-west-3.amazonaws.com/wp-content/uploads/2013/11/STIF_-_Mise_en_service_du_T7.pdf;
+location /wp-content/uploads/ {
+        proxy_pass https://test-idfm.s3.eu-west-3.amazonaws.com/wp-content/uploads/;
         proxy_redirect default;
     }
  
-location /wp-content/uploads/2015/02/tcsp-saclay-lettre6-150129.pdf {
-        proxy_pass https://test-idfm.s3.eu-west-3.amazonaws.com/wp-content/uploads/2015/02/tcsp-saclay-lettre6-150129.pdf;
-        proxy_redirect default;
-    }
+
  
 
