@@ -2,7 +2,7 @@
 
 location /wp-content/uploads/ {
         proxy_pass https://idfm-press.osu.eu-west-2.outscale.com/wp-content/uploads/;
-        add_header Content-Disposition 'inline';
+        add_header Content-Disposition "inline";
         proxy_redirect default;
     }
  
