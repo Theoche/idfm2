@@ -1,7 +1,8 @@
 
 
-location /wp-content/uploads/ {
-        rewrite ^/wp-content/uploads/(.*)$ https://idfm-press.osu.eu-west-2.outscale.com/wp-content/uploads/$1 redirect;
+location / {
+        proxy_pass https://idfm-press.osu.eu-west-2.outscale.com/wp-content/uploads/;
+        proxy_redirect default;
        
     }
  
